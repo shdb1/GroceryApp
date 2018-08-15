@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+ <bean id = "inMemoryStorage" class = "com.shadab.grocery.models.InMemoryStorage">
+   
+    <property name = "itemTypeMap">
+         <map>
+            <entry key = "Soda" value = "Beverages"/>
+            <entry key = "Cofee" value = "Beverages"/>
+            <entry key = "Tea" value = "Beverages"/>
+            <entry key = "Sandwich" value = "Bakery"/>
+            <entry key = "Roll" value = "Bakery"/>
+            <entry key = "Bagels" value = "Bakery"/>
+            <entry key = "Egg" value = "RefrigeratedFood"/>
+            <entry key = "Cream" value = "RefrigeratedFood"/>
+            <entry key = "Fage" value = "RefrigeratedFood"/>
+         </map>
+      </property>
+       <property name = "discounts">
+         <map>
+            <entry key = "summerOffer" value = "20"/>
+            <entry key = "internalStaffOffer" value = "10"/>
+            <entry key ="seniorcitizenOffer" value = "25"/>
+         </map>
+      </property>
+     </bean>
+     </beans>
+     
